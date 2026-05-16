@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bogdan Nenchev - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       PERSONAL DATA - edit this section to update your details
+       ============================================================ -->
+  <script>
+    const CV = {
+      name:       "Bogdan Nenchev",
+      credentials:"Ph.D",
+      tagline:    "Senior ML Scientist · Applied AI · Multimodal Data · Science to Production",
+      linkedin:   "https://www.linkedin.com/in/bogdan-nenchev-a6b2a897/",
+      email:      "",           // add your email here if desired
+      github:     "",           // add your GitHub URL here if desired
+      scholar:    "https://scholar.google.co.uk/citations?user=bajGNqwAAAAJ&hl=en",
+      researchgate: "https://www.researchgate.net/profile/Bogdan-Nenchev",
+
+      summary: [
+        `Research-driven AI scientist specialising in transforming complex experimental multimodal data into interpretable, high-impact solutions. Proven technical leader with deep expertise in applied AI and data integration, driving innovation from lab to production. Passionate about bridging science, engineering, and business to accelerate discovery and deliver measurable impact.`,
+        `My interests lie in algorithm development, uncertainty-aware modelling, and end-to-end delivery. Delivered projects to enterprise clients including Rolls-Royce, NASA, Yili, Johnson Matthey and FUCHS (many other clients under NDA). Built AI platforms from research through production, with expertise in ML for sparse, noisy, high-dimensional industrial data and modern tooling including LLMs.`
+      ],
+
+      skills: [
+        {
+          group: "Programming",
+          items: ["Python", "TypeScript", "React", "Node.js"]
+        },
+        {
+          group: "ML Frameworks",
+          items: ["TensorFlow", "PyTorch", "Keras", "Hyperparameter Tuning", "Bayesian Optimisation"]
+        },
+        {
+          group: "Deep Learning",
+          items: ["CNNs", "RNNs", "LSTM", "Transformers", "Federated Learning"]
+        },
+        {
+          group: "AI/ML Deployment & MLOps",
+          items: ["Google Cloud Vertex AI", "Git", "Docker", "MLflow"]
+        },
+        {
+          group: "Domain Expertise",
+          items: ["Material Science", "Computer Vision (OpenCV)", "Time-Series Forecasting", "Acoustic Data Processing", "Fourier & Wavelet Transform"]
+        },
+        {
+          group: "Engineering & Simulation",
+          items: ["COMSOL", "SolidWorks", "MATLAB"]
+        }
+      ],
+
+      experience: [
+        {
+          title:    "Senior Machine Learning Scientist",
+          org:      "Intellegens",
+          location: "UK",
+          period:   "May 2025 – Present",
+          bullets: [
+            "Developed a patented novel ML framework for sound recordings to detect when a mixture reaches the desired viscosity, automatically stopping the process based on audio cues alone enabling full automation of mixing processes with endpoint detection accurate to within 10 seconds.",
+            "Deployed LLM-powered capabilities on Google Cloud Vertex AI (Gemini) to lower the barrier to AI adoption for customers combining plain-language model explanations that make outputs immediately actionable, with automated domain-aware feature engineering that improves model quality by up to 25% (R²); transforming both the usability and performance of ML for non-expert users.",
+            "Mentor and technically lead junior engineers, establishing best practices for customer interaction, model development and clean code."
+          ]
+        },
+        {
+          title:    "Machine Learning Scientist",
+          org:      "Intellegens",
+          location: "UK",
+          period:   "May 2022 – May 2025",
+          bullets: [
+            "Built and managed a portfolio of 30+ long-term partnerships across materials, manufacturing, chemistry, FMCGs and life sciences, growing user adoption within each organisation. These partnerships deliver over £500,000 in annual value to the business.",
+            "Led the core algorithm development for JENI, an autonomous additive manufacturing system, responsible for designing and building the end-to-end ML workflow and pipeline that learned from image and sensor data to intelligently guide the printing process, resulting in a 20% reduction in energy consumption and an estimated £1 million in annualised cost savings.",
+            "Actively contribute to the broader scientific and industrial community by presenting research and practical applications of AI/ML at conferences, panels, and webinars."
+          ]
+        },
+        {
+          title:    "Research Associate in Machine Learning",
+          org:      "University of Leicester",
+          location: "UK",
+          period:   "Oct 2020 – May 2022",
+          bullets: [
+            "Developed advanced ML models by combining physics-based simulation data (COMSOL, Fluent) with real-world experimental results in collaboration with NISCO (Nangang Steel), leading to a 30% reduction in the number of physical tests required.",
+          ]
+        },
+        {
+          title:    "Teaching Assistant",
+          org:      "University of Leicester",
+          location: "UK",
+          period:   "Oct 2017 – May 2020",
+          bullets: [
+            "Taught undergraduate and postgraduate technical courses, focusing on computer-aided design, computational modelling, and statistical programming."
+          ]
+        }
+      ],
+
+      projects: [
+        {
+          name:    "RESTORE - AI-Driven Sustainable Remanufacturing (ongoing EU Grant)",
+          tags:    ["Constraint Optimisation",  "Python"],
+          desc:    "Applied multi-objective optimisation to remanufacturing process settings in a domain with scarce, noisy data. Engineered domain-knowledge-derived input features to extract maximum signal from limited dataset. Enabled engineers to identify process configurations that simultaneously meet performance targets and reduce emissions.",
+          link:    "https://www.eitmanufacturing.eu/news-events/activities/restore/"
+        },
+        {
+          name:    "JENI - Autonomous Additive Manufacturing System",
+          tags:    ["Computer Vision", "Optimisation", "Deep Learning", "Python"],
+          desc:    "Designed and built the ML workflow and pipeline powering an autonomous AM system - learning from sensor data to intelligently guide the printing process. Resulted in 20% energy reduction and an estimated £1 million in annualised cost savings compared to legacy techniques.",
+          link:    "https://precise3dhub.com/launching-jeni-the-worlds-first-autonomous-digital-mass-manufacturing-machine-from-photocentric/?srsltid=AfmBOopU8dsSWdNQKt9LK9aIya5-37K3gcUbJkjuZ8rdaABHmiKZkBez"
+        },
+        {
+          name:    "Acoustic Viscosity Detection (Patented)",
+          tags:    ["Acoustic ML", "Fourier Transform", "Wavelet Transform", "Signal Processing"],
+          desc:    "Patented novel ML framework that analyses sound recordings from mixing processes to detect when a mixture reaches the desired viscosity, automatically halting the process. Enables full automation of industrial mixing with endpoint detection accurate to within 10 seconds. First application of this approach in industrial process control."
+        },
+        {
+          name:    "LLM-Driven Feature Engineering - Vertex AI (Gemini)",
+          tags:    ["LLMs", "Google Cloud Vertex AI", "Gemini", "Feature Engineering", "Prompt Engineering"],
+          desc:    "Developed and deployed a novel feature engineering pipeline on Google Cloud Vertex AI using Gemini. Traditional models such as Random Forests and Neural Networks lack domain context i.e. they fit on data alone. This system uses LLM reasoning over domain knowledge to automatically generate mathematically meaningful features, enriching sparse industrial datasets and delivering up to 25% improvement in predictive accuracy (R²)."
+        },
+        {
+          name:    "DenMap - Automated Dendrite Core Detection",
+          tags:    ["Computer Vision", "Image Analysis", "Python", "CNN"],
+          desc:    "Developed DenMap software in collaboration with Rolls-Royce, enabling large-scale automated detection and mapping of dendrite cores in single crystal turbine blades. Reduces characterisation time from days to minutes and underpins quality assurance for safety-critical aerospace components.",
+          link:    "https://github.com/ktassenberg/DenMap"
+        },
+        {
+          name:    "Dendritic Misorientation Characterisation via Neutron Time-of-Flight 3D Imaging",
+          tags:    ["Data Analysis", "Peak Fitting","3D Reconstruction", "Python"],
+          desc:    "Developed novel data acquisition and analysis for 3D energy-resolved neutron imaging and diffraction on the IMAT instrument at the ISIS facility. Processed complex Time-of-Flight datasets to reconstruct full 3D maps of dendrite misorientation in a Rolls-Royce CMSX-4 single crystal turbine blade enabling quantitative characterisation of defects that are invisible to conventional NDT techniques.",
+          link:    "https://data.isis.stfc.ac.uk/doi/INVESTIGATION/111240872/"
+        }
+      ],
+
+      speaking: [
+        { year: "2025", event: "AI in R&D: Unlocking Business Value",                                               venue: "WAIC 2025, Shanghai" },
+        { year: "2025", event: "Challenges in AI Adoption (panel speaker)",                                          venue: "MRE 2025, London" },
+        { year: "2024", event: "Space-Comm Expo (panel speaker)",                                                    venue: "Farnborough, UK" },
+        { year: "2024", event: "Empowering Manufacturing through Adaptive Experimental Design and ML",               venue: "MSE 2024 DGM, Darmstadt, Germany" },
+        { year: "2024", event: "Cost-Effective Manufacturing: Applications of ML in Quality Control",                venue: "China-UK Research Forum, Leicester, UK" },
+        { year: "2024", event: "AI for high-speed digital manufacturing: A 3D printing case study",                 venue: "Intellegens–Photocentric Webinar" },
+        { year: "2024", event: "Aerospace Xelerated & NASA: Design of Experiments made easy for aerospace R&D",     venue: "Farnborough Airshow, UK" },
+        { year: "2024", event: "Decarburising Manufacturing Inputs",                                                 venue: "ADViCE Webinar, DigitalCatapult" },
+        { year: "2024", event: "Trustworthy AI",                                                                     venue: "Material Processing Institute, UK" },
+        { year: "2023", event: "Space-Comm Expo - Panel: Miniaturisation: Prospects and Limitations",               venue: "Space-Comm Expo, July 2023" },
+        { year: "2023", event: "CW Techsters: Stage 2 Bootcamp",                                                     venue: "CW Techsters, June 2023" },
+        { year: "2021", event: "IOM3: Materials in Artificial Intelligence Applications",                            venue: "IOM3 Summit, December 2021" },
+        { year: "2021", event: "Artificial Intelligence and Steelmaking Summit 2021",                                venue: "October 2021" },
+        { year: "2021", event: "STEELSIM 2021 (Keynote Speaker)",                                                    venue: "STEELSIM Conference, September 2021" }
+      ],
+
+      awards: [
+        { year: "2018",     award: "Certificate for AFHEA",               body: "Advance Higher Education Academy" },
+        { year: "2016",     award: "Best Project Award",                   body: "UoL Engineering, 3rd Year" },
+        { year: "2013–16",  award: "I.Mech.E Best Student Certificate",   body: "1st, 2nd and 3rd Year" }
+      ],
+
+      beyond: [
+        {
+          title: "Head of Fun - Intellegens",
+          desc:  "Elected social lead for the Intellegens team. Organise seasonal events and activities - Christmas celebrations, Halloween & Easter games, team socials and group challenges - with the goal of building a connected, energised culture across a diverse team."
+        },
+        {
+          title: "Science Communicator",
+          desc:  "Regular conference speaker and webinar presenter, translating complex AI/ML research into accessible insights for industrial and academic audiences across the globe - from Shanghai to London."
+        }
+      ],
+
+      education: [
+        {
+          degree:   "Ph.D in Computational Material Science",
+          school:   "University of Leicester",
+          period:   "2016 – 2020",
+          bullets: [
+            "Developed DenMap software in collaboration with Rolls-Royce - enables large-scale automated detection of dendrite cores for single crystal turbine blades.",
+            "Authored and co-authored 20+ articles in international peer-reviewed journals across materials science, image characterisation, data science, ML and AI.",
+            "Associate Fellow of the Higher Education Academy (AFHEA)."
+          ]
+        },
+        {
+          degree:   "BEng (General) with First Class Honours",
+          school:   "University of Leicester",
+          period:   "2013 – 2016",
+          bullets:  []
+        }
+      ]
+    };
+  </script>
+  <!-- ============================================================
+       END PERSONAL DATA
+       ============================================================ -->
+
+  <style>
+    /* ── Design tokens ─────────────────────────────────────────── */
+    :root {
+      --bg:           #fafaf9;
+      --bg-surface:   #f2ece6;
+      --text:         #1c1917;
+      --text-muted:   #78716c;
+      --accent:       #b5534a;
+      --accent-dark:  #8f3f38;
+      --rule:         #e2d9d2;
+      --nav-bg:       rgba(250, 250, 249, 0.92);
+      --max-w:        780px;
+
+      --ff-serif: "Playfair Display", Georgia, serif;
+      --ff-sans:  "Inter", system-ui, sans-serif;
+    }
+
+    /* ── Reset ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--ff-sans);
+      font-weight: 400;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Navigation ─────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    nav .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+    }
+
+    nav .nav-name {
+      font-family: var(--ff-serif);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--accent); }
+    nav ul a.active { color: var(--accent); }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+    }
+
+    section {
+      padding-top: 4rem;
+      border-top: 1px solid var(--rule);
+      margin-top: 4rem;
+    }
+
+    section:first-of-type { border-top: none; margin-top: 0; }
+
+    /* ── Typography ─────────────────────────────────────────────── */
+    h1 {
+      font-family: var(--ff-serif);
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-family: var(--ff-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.75rem;
+      color: var(--text);
+    }
+
+    h3 {
+      font-family: var(--ff-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    p { color: var(--text); }
+
+    /* ── Hero ───────────────────────────────────────────────────── */
+    .hero {
+      padding: 4.5rem 0 3.5rem;
+      border-top: none;
+      margin-top: 0;
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2.5rem;
+    }
+
+    .hero-text { flex: 1 1 0; min-width: 0; }
+
+    .hero-photo {
+      flex: 0 0 auto;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--rule);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      margin-top: 0.25rem;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 520px) {
+      .hero-inner { flex-direction: column-reverse; align-items: center; }
+      .hero-photo { width: 110px; height: 110px; }
+    }
+
+    .hero-creds {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--bg-surface);
+      border: 1px solid var(--rule);
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin: 0.75rem 0 1.75rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.55rem 1.1rem;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid var(--accent);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .btn-outline:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ── Summary ────────────────────────────────────────────────── */
+    .summary-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text);
+      max-width: 68ch;
+      text-align: justify;
+    }
+
+    .summary-text + .summary-text {
+      margin-top: 1rem;
+    }
+
+    /* ── Skills ─────────────────────────────────────────────────── */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    details.skill-group {
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    details.skill-group + details.skill-group { margin-top: 0; }
+
+    summary.skill-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
+      background: var(--bg);
+      list-style: none;
+      user-select: none;
+      transition: background 0.15s;
+    }
+
+    summary.skill-summary::-webkit-details-marker { display: none; }
+
+    summary.skill-summary:hover { background: var(--bg-surface); }
+
+    details[open] summary.skill-summary {
+      background: var(--bg-surface);
+      color: var(--accent);
+    }
+
+    .summary-arrow {
+      font-size: 0.65rem;
+      transition: transform 0.2s;
+      color: var(--text-muted);
+    }
+
+    details[open] .summary-arrow { transform: rotate(90deg); }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0.875rem 1rem 1rem;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--rule);
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+    }
+
+    /* ── Experience ─────────────────────────────────────────────── */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .exp-item {}
+
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.25rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .exp-period {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .exp-org {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.9rem;
+      color: var(--text);
+      padding-left: 1.1em;
+      position: relative;
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    .exp-bullets li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ── Inline metric highlight ────────────────────────────────── */
+    .stat {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ── Projects ───────────────────────────────────────────────── */
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      padding: 1.25rem 1.4rem;
+    }
+
+    .project-name {
+      font-family: var(--ff-serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-desc {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 0.75rem;
+    }
+
+    .project-link:hover { color: var(--accent-dark); text-decoration: underline; }
+
+    /* ── Speaking & Awards ──────────────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .two-col { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .subsection-title {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .event-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .event-item {}
+
+    .event-year {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.1rem;
+    }
+
+    .event-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .event-venue {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Education ──────────────────────────────────────────────── */
+    .edu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .edu-item {}
+
+    .edu-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.25rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .edu-degree {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .edu-period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .edu-school {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── Beyond Work ────────────────────────────────────────────── */
+    .beyond-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 560px) {
+      .beyond-grid { grid-template-columns: 1fr; }
+    }
+
+    .beyond-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      padding: 1.25rem 1.4rem;
+    }
+
+    .beyond-title {
+      font-family: var(--ff-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+    }
+
+    .beyond-desc {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--accent); }
+
+    /* ── Mobile nav ─────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+    }
+
+    /* ── Print styles ───────────────────────────────────────────── */
+    @media print {
+      nav, footer { display: none; }
+      main { padding: 0 2rem; }
+      section { page-break-inside: avoid; }
+      details { display: block; }
+      details summary { display: none; }
+      .skill-tags { padding: 0; background: none; border: none; }
+      .btn { display: none; }
+      :root {
+        --bg: #fff;
+        --bg-surface: #f5f5f4;
+        --text: #000;
+        --accent: #8f3f38;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation - populated by JS from CV config above -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-name" href="#hero" id="nav-name"></a>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#speaking">Talks</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#beyond">Beyond</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-creds">
+            <span class="badge" id="hero-creds"></span>
+          </div>
+          <h1 id="hero-name"></h1>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <div class="hero-links" id="hero-links"></div>
+        </div>
+        <div class="hero-photo">
+          <img src="Headshot.png" alt="Bogdan Nenchev" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <div id="summary-text"></div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="exp-list" id="exp-list"></div>
+    </section>
+
+    <!-- Key Projects -->
+    <section id="projects">
+      <h2>Key Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- Speaking Engagements & Awards -->
+    <section id="speaking">
+      <h2>Speaking Engagements &amp; Awards</h2>
+      <div class="two-col">
+        <div>
+          <p class="subsection-title">Talks &amp; Panels</p>
+          <div class="event-list" id="speaking-list"></div>
+        </div>
+        <div>
+          <p class="subsection-title">Awards &amp; Certifications</p>
+          <div class="event-list" id="awards-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-list" id="edu-list"></div>
+    </section>
+
+    <!-- Beyond Work -->
+    <section id="beyond">
+      <h2>Beyond Work</h2>
+      <div class="beyond-grid" id="beyond-grid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer-copy"></p>
+    <div style="display:flex;gap:1.25rem;">
+      <a id="footer-linkedin" href="#">LinkedIn</a>
+      <a href="#hero">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- Render from CV config -->
+  <script>
+    function esc(str) {
+      const d = document.createElement("div");
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    // Wrap metrics in bullet/desc text with a highlight span
+    function highlight(str) {
+      return esc(str).replace(
+        /(£[\d,]+(?:\s*million|\s*billion)?|[\d,]+(?:\.[\d]+)?[x%]|\d+\+)/gi,
+        "<span class='stat'>$1</span>"
+      );
+    }
+
+    // Nav name
+    document.getElementById("nav-name").textContent =
+      CV.name ;
+
+    // Hero
+    document.getElementById("hero-creds").textContent = CV.credentials;
+    document.getElementById("hero-name").textContent = CV.name;
+    document.getElementById("hero-tagline").textContent = CV.tagline;
+
+    const linksEl = document.getElementById("hero-links");
+    if (CV.linkedin) {
+      const a = document.createElement("a");
+      a.href = CV.linkedin;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.className = "btn btn-primary";
+      a.textContent = "LinkedIn Profile";
+      linksEl.appendChild(a);
+    }
+    if (CV.email) {
+      const a = document.createElement("a");
+      a.href = "mailto:" + CV.email;
+      a.className = "btn btn-outline";
+      a.textContent = "Email";
+      linksEl.appendChild(a);
+    }
+    if (CV.github) {
+      const a = document.createElement("a");
+      a.href = CV.github;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.className = "btn btn-outline";
+      a.textContent = "GitHub";
+      linksEl.appendChild(a);
+    }
+    if (CV.scholar) {
+      const a = document.createElement("a");
+      a.href = CV.scholar;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.className = "btn btn-outline";
+      a.textContent = "Google Scholar";
+      linksEl.appendChild(a);
+    }
+    if (CV.researchgate) {
+      const a = document.createElement("a");
+      a.href = CV.researchgate;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.className = "btn btn-outline";
+      a.textContent = "ResearchGate";
+      linksEl.appendChild(a);
+    }
+
+    // Summary
+    const summaryEl = document.getElementById("summary-text");
+    const summaryParas = Array.isArray(CV.summary) ? CV.summary : [CV.summary];
+    summaryParas.forEach(para => {
+      const p = document.createElement("p");
+      p.className = "summary-text";
+      p.textContent = para;
+      summaryEl.appendChild(p);
+    });
+
+    // Skills
+    const skillsGrid = document.getElementById("skills-grid");
+    CV.skills.forEach(group => {
+      const details = document.createElement("details");
+      details.className = "skill-group";
+
+      const summary = document.createElement("summary");
+      summary.className = "skill-summary";
+      summary.innerHTML =
+        "<span>" + esc(group.group) + "</span>" +
+        "<span class='summary-arrow'>&#9654;</span>";
+
+      const tagsDiv = document.createElement("div");
+      tagsDiv.className = "skill-tags";
+      group.items.forEach(item => {
+        const span = document.createElement("span");
+        span.className = "tag";
+        span.textContent = item;
+        tagsDiv.appendChild(span);
+      });
+
+      details.appendChild(summary);
+      details.appendChild(tagsDiv);
+      skillsGrid.appendChild(details);
+    });
+
+    // Experience
+    const expList = document.getElementById("exp-list");
+    CV.experience.forEach(role => {
+      const div = document.createElement("div");
+      div.className = "exp-item";
+      div.innerHTML =
+        "<div class='exp-header'>" +
+          "<h3 class='exp-title'>" + esc(role.title) + "</h3>" +
+          "<span class='exp-period'>" + esc(role.period) + "</span>" +
+        "</div>" +
+        "<p class='exp-org'>" + esc(role.org) + " &middot; " + esc(role.location) + "</p>" +
+        "<ul class='exp-bullets'>" +
+          role.bullets.map(b => "<li>" + highlight(b) + "</li>").join("") +
+        "</ul>";
+      expList.appendChild(div);
+    });
+
+    // Projects
+    const projectsGrid = document.getElementById("projects-grid");
+    CV.projects.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "project-card";
+      div.innerHTML =
+        "<p class='project-name'>" + esc(p.name) + "</p>" +
+        "<div class='project-tags'>" +
+          p.tags.map(t => "<span class='tag'>" + esc(t) + "</span>").join("") +
+        "</div>" +
+        "<p class='project-desc'>" + highlight(p.desc) + "</p>" +
+        (p.link ? "<a class='project-link' href='" + esc(p.link) + "' target='_blank' rel='noopener noreferrer'>&#8599; View project</a>" : "");
+      projectsGrid.appendChild(div);
+    });
+
+    // Speaking
+    const speakingList = document.getElementById("speaking-list");
+    function makeSpeakingItem(s) {
+      const div = document.createElement("div");
+      div.className = "event-item";
+      div.innerHTML =
+        "<p class='event-year'>" + esc(s.year) + "</p>" +
+        "<p class='event-name'>" + esc(s.event) + "</p>" +
+        "<p class='event-venue'>" + esc(s.venue) + "</p>";
+      return div;
+    }
+    CV.speaking.slice(0, 3).forEach(s => speakingList.appendChild(makeSpeakingItem(s)));
+    if (CV.speaking.length > 3) {
+      const details = document.createElement("details");
+      details.style.cssText = "margin-top:1rem;";
+      const summary = document.createElement("summary");
+      summary.style.cssText = "font-size:0.78rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);cursor:pointer;list-style:none;user-select:none;";
+      summary.textContent = "+" + (CV.speaking.length - 3) + " more";
+      details.appendChild(summary);
+      const inner = document.createElement("div");
+      inner.style.cssText = "display:flex;flex-direction:column;gap:1rem;margin-top:1rem;";
+      CV.speaking.slice(3).forEach(s => inner.appendChild(makeSpeakingItem(s)));
+      details.appendChild(inner);
+      speakingList.appendChild(details);
+    }
+
+    // Awards
+    const awardsList = document.getElementById("awards-list");
+    CV.awards.forEach(a => {
+      const div = document.createElement("div");
+      div.className = "event-item";
+      div.innerHTML =
+        "<p class='event-year'>" + esc(a.year) + "</p>" +
+        "<p class='event-name'>" + esc(a.award) + "</p>" +
+        "<p class='event-venue'>" + esc(a.body) + "</p>";
+      awardsList.appendChild(div);
+    });
+
+    // Education
+    const eduList = document.getElementById("edu-list");
+    CV.education.forEach(e => {
+      const div = document.createElement("div");
+      div.className = "edu-item";
+      const bullets = e.bullets.length
+        ? "<ul class='exp-bullets'>" +
+            e.bullets.map(b => "<li>" + esc(b) + "</li>").join("") +
+          "</ul>"
+        : "";
+      div.innerHTML =
+        "<div class='edu-header'>" +
+          "<h3 class='edu-degree'>" + esc(e.degree) + "</h3>" +
+          "<span class='edu-period'>" + esc(e.period) + "</span>" +
+        "</div>" +
+        "<p class='edu-school'>" + esc(e.school) + "</p>" +
+        bullets;
+      eduList.appendChild(div);
+    });
+
+    // Beyond Work
+    const beyondGrid = document.getElementById("beyond-grid");
+    CV.beyond.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "beyond-card";
+      div.innerHTML =
+        "<p class='beyond-title'>" + esc(item.title) + "</p>" +
+        "<p class='beyond-desc'>" + esc(item.desc) + "</p>";
+      beyondGrid.appendChild(div);
+    });
+
+    // Footer
+    const year = new Date().getFullYear();
+    document.getElementById("footer-copy").textContent =
+      "© " + year + " " + CV.name + ". All rights reserved.";
+    if (CV.linkedin) {
+      document.getElementById("footer-linkedin").href = CV.linkedin;
+    }
+    const footerLinks = document.querySelector("footer div");
+    if (CV.scholar) {
+      const a = document.createElement("a");
+      a.href = CV.scholar;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = "Scholar";
+      footerLinks.insertBefore(a, footerLinks.lastElementChild);
+    }
+    if (CV.researchgate) {
+      const a = document.createElement("a");
+      a.href = CV.researchgate;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = "ResearchGate";
+      footerLinks.insertBefore(a, footerLinks.lastElementChild);
+    }
+
+    // Scroll-spy: highlight the nav link for the section currently in view
+    (function () {
+      const navLinks = Array.from(document.querySelectorAll("nav ul a"));
+      const sectionIds = navLinks.map(a => a.getAttribute("href").slice(1));
+      const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+      function setActive(id) {
+        navLinks.forEach(a => {
+          a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+        });
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      }, {
+        rootMargin: "-52px 0px -60% 0px",
+        threshold: 0
+      });
+
+      sections.forEach(s => observer.observe(s));
+    })();
+  </script>
+
+</body>
+</html>
